@@ -8,13 +8,16 @@
       background-color: #EC775C;
       color: #ddd;
 underline dotted red;
-font-decoration
     }
     div{
     font-size: 2em;
       margin-bottom: 6px;
       border-bottom: 1px solid #bbb;
       }
+input{
+font-size: 2em;
+padding-left: 20px;
+}
     </style>
   </head>
   <body>
@@ -34,7 +37,7 @@ font-decoration
 
             for(var i = 1; i < 50000; i++){
                 var newDiv = document.createElement("div");
-                    newDiv.innerHTML = `Я ПУКНУЛ ЦЕЛЫХ ${i} РАЗ!`;
+                    newDiv.innerHTML = `Я ПУКНУЛ ЦЕЛЫХ ${i} РАЗ!<input type="checkbox">Отметься</input>`;
 
                 my_div = document.getElementById("org_div1");
                 document.body.insertBefore(newDiv, my_div);
