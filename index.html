@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    div{
+    font-size: 16em;
+    }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+
+  </body>
+  <script>
+        document.body.onload = addElements;
+        var my_div = newDiv = null;
+
+        function addElements() {
+
+            for(var i = 1; i < 50000; i++){
+                var newDiv = document.createElement("div");
+                    newDiv.innerHTML = "Я ПУКНУЛ!";
+
+                my_div = document.getElementById("org_div1");
+                document.body.insertBefore(newDiv, my_div);
+            }
+        }
+    </script>
+</html>
